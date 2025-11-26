@@ -562,13 +562,40 @@ body {
     padding: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: padding 0.3s ease;
     background: var(--background-light);
 }
 
 .topic-card.active .topic-content {
-    max-height: 400px;
+    max-height: none;
     padding: 1.5rem;
+}
+.topic-video-card {
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--background-light);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow-light);
+    padding: 1rem 1.25rem 1.25rem;
+}
+
+.topic-video-card .video-player {
+    margin-bottom: 1rem;
+}
+
+.topic-video-info h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.topic-video-info p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 .subtopic {
